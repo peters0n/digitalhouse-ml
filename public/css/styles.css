@@ -1,0 +1,380 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+    padding: 20px;
+    
+}
+
+.logo {
+    width: 100px;
+}
+
+.banner {
+    width: 100%;
+
+}
+
+.logo-barra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    justify-content: center;
+
+    
+}
+
+.busqueda {
+    display: flex;
+    flex: 1;
+    
+
+}
+
+input#busqueda {
+    height: 27px;
+    border: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%
+}
+
+.boton-barra {
+    position: relative;
+    height: 25px;
+    width: 20px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    left: -20px;
+
+
+}
+
+.copy-header {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+main {
+    background-color: #ebebeb;
+    width: 90%;
+    margin:auto;
+    
+}
+
+main section article {
+    position: relative;
+}
+
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 55px;
+    }
+
+main article {
+    margin-bottom: 10px;
+}
+
+.visita-oferta {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.visita-oferta article {
+    margin: 15px;
+    width: 100%;
+}
+
+
+
+#cuotas {
+    text-align: center;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 17px;
+}
+
+.hamburguer-button {
+    background-color: #03264c;
+    color:#ffffff;
+    max-width: 50px;
+    padding: 15px 0;
+    display: block;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+h2 {
+   font-size: 24px;
+   margin-top: 15px;
+   color: #413f3f;
+}
+
+.precio {
+    font-size: 18;
+}
+
+
+.descu {
+    font-size: 16px;
+}
+
+.precio-descuento {
+    display: flex;
+    align-items: center;
+    
+}
+
+.precio-descuento p {
+
+    margin: 0px 3px;
+
+}
+
+.descrip {
+    font-size: 16px;
+}
+
+.des-productos {
+    border-top: solid 1px #ebebeb;
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.precio{
+    font-size: 1.7em;
+    margin-top: 0.6em;
+    margin-bottom:0;
+  }
+  
+  .descuento{
+      font-size: 1em;
+      color:#00b638;
+      margin-top: 0.3em;
+  }
+  
+  /*.fa-truck:before {
+      font-size: 1em;
+      color: #00b638;
+      border-image: solid 0.8em;
+      border: solid 0.0625em;
+      padding: 0.625em;
+      border-radius:53.125em;
+  } */
+  
+
+article figure  {
+    background-color: #ffffff;
+    
+}
+
+article figure img {
+    margin: auto;
+    width:100%;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.icono {
+    font-size: 2em;
+    margin-bottom: 10px;
+    border: 2px;
+    border-radius: 2px;
+    padding: 5px;
+    color: rgb(4, 4, 122);
+}
+
+.icono:hover {
+    color: rgb(71, 71, 77); 
+}
+
+footer p {
+    margin-bottom: 30px;
+}
+
+/* tablets  */
+
+.descripcion{
+    display:none;
+  }
+  
+  .des-productos:hover > .descripcion {
+    display: block;
+  }
+
+  .fa-truck {
+    transform: rotateX(0deg);
+    transition: transform 3s;
+
+  }
+
+  section article:hover .fa-truck {
+    transform: rotateX(360deg);
+   }
+
+@media (min-width: 361px) {
+    .logo {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+   section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   }
+   
+  }
+
+  footer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      
+  }
+
+  .footer-el {
+    margin: 15px;
+    width: 100%;
+}
+/* desktop  */
+  @media (min-width: 768px) {
+
+    .logo-barra {
+        width: 60%;
+    }
+
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-around; /* varios elementos mismo espacio */
+
+    }
+    .copy-header{
+        max-width: none;
+        text-align: right;
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+        
+    }
+
+    .main-navbar li {
+        margin: 10px;
+        
+    }
+
+    .visita-oferta article {
+        width: 40%;
+    }
+
+    .footer-el {
+        width: 30%;
+    }
+    
+  }
+
+  /*Desktop*/
+
+  @media (min-width: 1200px) {
+
+      .main-header-top-bar, .main-navbar {
+          max-width: 1200px;
+          margin: auto;  
+      }
+
+      .main-header-top-bar {
+          align-items: center;
+      }
+
+      .main-navbar {
+          margin-top: 15px;
+      }
+
+      .main-navbar li {
+        margin: 15px;        
+    }
+
+    .main-navbar a {
+        font-size: 19px;
+    }
+
+    .copy-header {
+        margin: 0;
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .visita-oferta article {
+        width: 20%;
+    }
+
+    .footer-el {
+        width: 30%;
+    }
+  }
+
+  @media (max-width: 361px) {
+    .normal-menu {
+        display: none;
+    }
+  }

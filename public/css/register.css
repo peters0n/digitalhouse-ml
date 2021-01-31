@@ -1,0 +1,29 @@
+.formulario-registro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formulario-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.formulario-flex input {    
+        height: 35px;
+        border: 1px;
+        border-radius: 5px;
+        padding: 5px;
+        
+}
+
+.perfil-usuario {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.login-btn:hover {
+background-color: #0022AA;
+}
